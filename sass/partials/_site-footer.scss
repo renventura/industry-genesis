@@ -1,0 +1,41 @@
+.site-footer {
+	background-color: #fff;
+	font-size: $font-size-alt;
+	text-transform: uppercase;
+	.wrap {
+		padding: 40px 0;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	i.fa-heart {
+		color: #F06653;
+	}
+	.scroll-to-top {
+		position: fixed;
+		right: 20px;
+		bottom: 5%;
+		i {
+			color: $color-button;
+			font-size: 3em;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+
+	.site-footer {
+		text-align: center;
+		.wrap {
+			padding: 20px;
+		}
+		.pull-right {
+			display: block;
+			float: none;
+			margin-top: 20px;
+		}
+	}
+}

@@ -1,0 +1,79 @@
+/* Single article.entry
+--------------------------------------------- */
+
+.single, .page {
+
+	// Entry
+	.entry {
+		padding: 30px 0;
+		.entry-title {
+
+		}
+		.entry-content {
+			
+		}
+	}
+
+	// Previous-Next Post links
+	.single-post-nav {
+		margin-bottom: 50px;
+		.post-nav-direction {
+			color: #777;
+			display: block;
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+		#previous-post,
+		#next-post {
+			display: inline-block;
+			width: 50%;
+		}
+		#previous-post {
+			text-align: left;
+		}
+		#next-post {
+			float: right;
+			text-align: right;
+		}
+	}
+
+	// Author box
+	.author-box {
+		background-color: $color-gray;
+		@include dashed-border();
+		font-size: $font-size-alt;
+		margin-bottom: 50px;
+		padding: 20px;
+		.avatar {
+			@include border-radius(50%);
+			margin-right: 30px;
+			position: relative;
+			top: 20px;
+		}
+		.author-name {
+			display: inline-block;
+		}
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	// After entry widget
+	.after-entry.widget-area {
+		margin-bottom: 30px;
+	}
+}
+
+.page-template-landing-page .entry {
+	border: none;
+}
+
+@media only screen and (max-width: 1023px) {
+	.single, .page {
+		.entry,
+		.single-post-nav,
+		.author-box {
+			padding: 30px;
+		}
+	}
+}

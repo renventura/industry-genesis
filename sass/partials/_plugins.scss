@@ -1,0 +1,38 @@
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget {
+	form + p {
+		margin-top: 24px;
+	}
+	input {
+		font-size: 16px;
+		margin-bottom: 16px;
+	}
+}
+
+.sidebar .enews-widget {
+	
+}
+
+@media only screen and (max-width: 768px) {
+	.enews-widget {
+		input:not([type="submit"]) {
+			display: block;
+			margin: 10px auto; 
+			width: 100%;
+		}
+		input[type="submit"] {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+}
+
+/* JetPack
+--------------------------------------------- */
+
+#wpstats {
+	display: none;
+}

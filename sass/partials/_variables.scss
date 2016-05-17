@@ -1,0 +1,31 @@
+//--------------------------------------------------------------
+// Variables
+//--------------------------------------------------------------
+
+// Colors
+$color-gray: #F6F6F6;
+$color-header: #34495e;
+$color-font: #444;
+$color-header-links: #06295D;
+$color-link: #F06222;
+$color-link-visited: $color-link;
+$color-link-hover: lighten( $color-link, 10% );
+$color-button: #6C9CBD;
+$color-cta: #06295D;
+$color-shadow: darken($color-gray,10%);
+
+// Fonts
+$font-headers: 'Source Sans Pro', sans-serif;
+$font-body: 'Source Sans Pro', sans-serif;
+$font-mono: 'Courier 10 Pitch', Courier, monospace;
+$font-size: 18px;
+$font-size-alt: 14px;
+
+// Social media colors
+$twitter: #09b0ed;
+$facebook: #3d5a98;
+$googleplus: #dd4c39;
+$linkedin: #035a87;
+$youtube: #cc181e;
+$pinterest: #cb2127;
+$stumbleupon: #eb4923;

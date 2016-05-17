@@ -1,0 +1,588 @@
+/* Typographical Elements
+--------------------------------------------- */
+
+::-moz-selection {
+	background-color: darken( $color-link, 10% );
+	color: #fff;
+}
+
+::selection {
+	background-color: darken( $color-link, 10% );
+	color: #fff;
+}
+
+:focus {
+	outline: $color-button solid 1px;
+}
+
+body {
+	background-color: #fff;
+	color: $color-font;
+	font-family: $font-body;
+	font-size: $font-size;
+	font-weight: 300;
+	line-height: 2;
+	margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button {
+	@include transition(all, 0.1s, ease-in-out);
+}
+
+a {
+	color: $color-link;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $color-link-hover;
+}
+
+p {
+	margin: 0 0 30px;
+	padding: 0;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+address {
+	margin-bottom: 30px;
+}
+
+blockquote,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	background: $color-gray;
+	border-left: 10px solid darken($color-gray,10%);
+	font-size: $font-size-alt;
+	font-style: italic;
+	margin: 50px 20px;
+	padding: 30px;
+	position: relative;
+	quotes: "\201C""\201D""\2018""\2019";
+	p:last-child {
+		margin-bottom: 0;
+	}
+	cite {
+		display: block;
+		margin: 10px 0;
+	}
+}
+
+blockquote:before {
+	color: $color-gray;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	position: absolute;
+	vertical-align: -0.4em;
+}
+
+blockquote:after {
+	color: darken( $color-gray, 10% );
+	content: close-quote;
+	float: right;
+	font-size: 4em;
+	line-height: 0.1em;
+	vertical-align: -0.6em;
+}
+
+pre {
+	background-color: $color-gray;
+	border-left: 10px solid darken($color-gray,10%);
+	font-family: Courier, sans-serif;
+	font-size: $font-size-alt;
+	line-height: 1.5;
+	margin: 30px 0;
+	padding: 24px;
+}
+
+code {
+	background-color: $color-gray;
+}
+
+/* Helper classes
+--------------------------------------------- */
+
+.bold {
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.justify {
+	text-align: justify;
+}
+
+.spin {
+    @include spin();
+}
+
+.pull-right {
+	float: right;
+	position: relative;
+	right: -50%;
+	min-width: 150%;
+}
+
+.pull-left {
+	float: left;
+	position: relative;
+	left: -50%;
+	min-width: 150%;
+}
+
+.widen {
+	left: -15%;
+	position: relative;
+	width: 130%;
+	max-width: 1000px;
+}
+
+.full-width {
+	left: -50%;
+	position: relative;
+	width: 200%;
+	max-width: 200%;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1023px) {
+	.widen {
+		left: 0;
+		width: 100%;
+		max-width: 100%;
+		overflow-x: scroll;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.full-width {
+		left: 0;
+		width: 100%;
+		max-width: 100%;
+	}
+	.pull-right {
+		display: block !important;
+		float: none;
+	}
+	.pull-right,
+	.pull-left {
+		left: 0;
+		right: 0;
+		min-width: 100%;
+	}
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: $color-header;
+	font-family: $font-headers;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 36px;
+	margin: 18px 0;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 15px 0;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 12px 0;
+}
+
+h4 {
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+h5 {
+	font-size: 18px;
+	margin: 9px 0;
+}
+
+h6 {
+	font-size: 16px;
+	margin: 8px 0;
+}
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+.featured-content img {
+	width: auto;
+}
+
+img.archive-post-image {
+	width: 100%;
+}
+
+.video {
+	margin-bottom: 30px;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 20px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* ## Gallery
+--------------------------------------------- */
+
+.gallery-item {
+	float: left;
+	margin: 0 0 28px;
+	text-align: center;
+}
+
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	width: 33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	width: 16.6666%;
+}
+
+.gallery-columns-7 .gallery-item {
+	width: 14.2857%;
+}
+
+.gallery-columns-8 .gallery-item {
+	width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	width: 11.1111%;
+}
+
+.gallery {
+	overflow: hidden;
+	img {
+		@include transition(all, 0.2s, ease-in-out);
+		box-shadow: 0 -1px 0px 0px $color-shadow,
+					0 3px 3px 0px $color-shadow,
+					1px 0 0 0 $color-shadow,
+					-1px 0 0 0 $color-shadow;
+		height: auto;
+		padding: 4px;
+		width: auto;
+	}
+}
+
+.genesis-skip-link {
+	margin: 0;
+	li {
+		height: 0;
+		width: 0;
+		list-style: none;
+	}
+}
+
+/* Forms and Buttons
+--------------------------------------------- */
+
+form {
+	ul {
+		margin-left: 0;
+		li {
+			list-style-type: none;
+		}
+	}
+}
+
+input,
+select,
+textarea {
+	border: 0;
+	@include border-radius( 3px );
+	font-size: 18px;
+	font-weight: 300;
+	padding: 16px;
+	width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea {
+	border: 1px solid darken($color-gray,5%);
+	border-bottom: none;
+	@include box-shadow( 0, 3px, 0, darken($color-gray,5%) );
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+input[type="checkbox"],
+input[type="image"],
+input[type="radio"] {
+	width: auto;
+}
+
+::-moz-placeholder {
+	color: lighten($color-font,25%);
+	opacity: 1;
+	font-weight: 300;
+}
+
+::-webkit-input-placeholder {
+	color: lighten( $color-font, 25% );
+	font-weight: 300;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button {
+	background: $color-button;
+	border: 0;
+	@include border-radius(3px);
+	@include box-shadow( 0, 4px, 0, darken($color-button,10%) );
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-weight: 300;
+	padding: 12px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	width: auto;
+}
+
+.button {
+	display: inline-block;
+}
+
+.button.clear {
+	background: none;
+	@include box-shadow( 0, 0, 0, transparent );
+	border: 2px solid $color-button;
+	&.white {
+		border-color: #fff;
+	}
+	&:hover {
+		background: #fff;
+		color: $color-header;
+		@include box-shadow( 0, 0, 0, transparent );
+	}
+}
+
+button:hover,
+input:hover[type="button"],
+input:hover[type="reset"],
+input:hover[type="submit"],
+.button:hover {
+	background: lighten($color-button,10%);
+	@include box-shadow( 0, 4px, 0, lighten($color-button,10%) );
+	color: #fff;
+}
+
+.footer-widgets {
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.button {
+		background-color: #e5554e;
+		color: #fff;
+	}
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+	display: none;
+}
+
+fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.no-label {
+	label {
+		display: none;
+	}
+}
+
+/* Definition lists
+--------------------------------------------- */
+
+dl {
+	background-color: $color-gray;
+	@include dashed-border();
+	padding: 30px;
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		margin: 10px 30px;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* Lists
+--------------------------------------------- */
+
+ol,
+ul {
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+ol > li {
+	list-style-type: decimal;
+}
+
+ul > li {
+	list-style-type: disc;
+}
+
+ol ol,
+ul ul {
+	margin-bottom: 0;
+}
+
+/* Tables
+--------------------------------------------- */
+
+table {
+
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 2;
+	margin: 30px 0;
+	width: 100%;
+
+	thead th {
+		background: $color-gray;
+		padding: 20px;
+	}
+
+	tfoot th {
+		background: $color-gray;
+	}
+
+	tbody {
+		border-bottom: 1px solid #ddd;
+	}
+
+	tr {
+		
+	}
+
+	td,
+	th {
+		padding: 10px 20px;
+		text-align: left;
+	}
+
+	td {
+		border-top: 1px solid #ddd;
+	}
+}

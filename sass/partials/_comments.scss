@@ -1,0 +1,129 @@
+/* Comments
+--------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	@include border-radius(4px);
+}
+
+.entry-comments > h3 {
+	text-align: center;
+}
+
+.entry-comments,
+.entry-pings {
+
+}
+
+.comment-content {
+	clear: both;
+	word-wrap: break-word;
+}
+
+.comment-list {
+	margin-bottom: 50px;
+	margin-left: 0;
+	li {
+		
+	}
+	li:not(.comment) {
+		list-style-type: inherit;
+	}
+	.bypostauthor {
+		
+	}
+	li.comment li.comment {
+		margin-left: 20px;
+	}
+	li.comment {
+		list-style-type: none;
+		.avatar {
+			@include border-radius(50%);
+			float: left;
+			margin: 0 16px 24px 0;
+			width: 50px;
+		}
+		article {
+			box-shadow: 0 -1px 0px 0px $color-shadow,
+						0 3px 3px 0px $color-shadow,
+						1px 0 0 0 $color-shadow,
+						-1px 0 0 0 $color-shadow;
+			margin-top: 30px;
+			padding: 20px;
+			position: relative;
+			.comment-header {
+				color: #999;
+				font-size: 13px;
+				a {
+					border-bottom: 1px dotted #000;
+					color: #000;
+				}
+			}
+			.comment-reply{
+				.comment-reply-link {
+					position: absolute;
+					right: 10px;
+					top: 10px;
+				}
+			}
+		}
+		.children {
+			/* article::before {
+				content: '\02937';
+				height: 30px;
+				left: -10px;
+				position: absolute;
+				position: relative;
+				top: -10px;
+			} */
+		}
+	}
+}
+
+.comment-respond {
+	background-color: $color-gray;
+	margin-bottom: 50px;
+	padding: 50px;
+	text-align: center;
+	label {
+		display: block;
+		margin-right: 12px;
+	}
+	input:not([type="submit"]),
+	select,
+	textarea {
+		background: #fff;
+	}
+	.comment-form {
+		label {
+			text-align: left;
+		}
+		p.form-submit {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.entry-comments .comment-author {
+	margin-bottom: 0;
+}
+
+.entry-pings .reply {
+	display: none;
+}
+
+.form-allowed-tags {
+	background-color: $color-gray;
+	font-size: 13px;
+	padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.comment-list {
+		padding: 10px;
+	}
+	.comment-respond {
+		padding: 50px 5%;
+	}
+}

@@ -1,0 +1,4 @@
+Industry Child Theme (Genesis Framework)
+
+March 17, 2016 - 1.0
+* Initial version

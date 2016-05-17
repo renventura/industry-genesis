@@ -1,0 +1,25 @@
+.sidebar {
+	background: $color-gray;
+	font-size: 16px;
+	margin-top: 20px;
+	li {
+		border-bottom: 1px dotted #ddd;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+	}
+	p:last-child,
+	ul > li:last-child {
+		margin-bottom: 0;
+	}
+	.widget {
+		margin-bottom: 0;
+		padding: 40px 40px;
+		&:not(:last-of-type)::after {
+			content: " ";
+			border-bottom: 2px solid darken($color-gray,3%);
+			display: block;
+			margin: 40px auto 0;
+			width: 100%;
+		}
+	}
+}

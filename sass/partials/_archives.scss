@@ -1,0 +1,90 @@
+/* Archive article.entry
+--------------------------------------------- */
+
+.archive, .blog {
+
+	.content {
+		padding: 50px;
+		width: 800px;
+	}
+
+	// Entry
+	.entry {
+		background-color: #fff;
+		box-shadow: 0 -1px 0px 0px $color-shadow,
+					0 3px 3px 0px $color-shadow,
+					1px 0 0 0 $color-shadow,
+					-1px 0 0 0 $color-shadow;
+		margin-bottom: 80px;
+		text-align: center;
+		p:last-child {
+			margin-bottom: 0;
+		}
+		.entry-title {
+			font-size: 30px;
+			margin-bottom: 10px;
+			padding: 0 20px;
+		}
+		.entry-content {
+			padding: 0 20px 20px;
+		}
+		.entry-footer {
+			display: none;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	// Pagination
+	.adjacent-entry-pagination {
+		margin-bottom: 0;
+	}
+
+	.archive-pagination {
+		clear: both;
+		margin: 50px 0;
+		ul {
+			margin: 0;
+		}
+		li {
+			display: inline;
+			a {
+				background-color: $color-gray;
+				@include box-shadow( 0, 2px, 0, darken($color-gray,10%) );
+				color: $color-font;
+				display: inline-block;
+				font-size: 16px;
+				padding: 16px 24px;
+			}
+		}
+		li a:hover,
+		.active a {
+			background-color: $color-gray;
+		}
+	}
+
+	// Archive description
+	.archive-description {
+		background-color: $color-gray;
+		border: 1px dashed darken($color-gray,20%);
+		margin-bottom: 40px;
+		padding: 30px;
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.archive, .blog {
+
+		.content {
+			padding: 20px;
+		}
+
+		.entry {
+			margin-bottom: 50px;
+		}
+	}
+}

@@ -1,0 +1,133 @@
+.home-hero {
+	height: 70vh;
+	.hero-overlay {
+		background-color: transparent;
+	}
+	.content {
+		margin: 0 auto;
+		min-height: 400px;
+		width: 100%;
+		.widget-area {
+			h2 {
+				text-shadow: -1px -1px 4px rgba(0, 0, 0, .7);
+			}
+			.widget-title {
+				font-size: 64px;
+				line-height: 2;
+				margin: 20px 0;
+				text-shadow: -1px -1px 4px rgba(0, 0, 0, .7);
+			}
+		}
+	}
+	.hero-content {
+		background: rgba(255,255,255,.4);
+		padding: 50px;
+	}
+}
+
+.hero.home-featured {
+	min-height: 0;
+	max-height: inherit;
+	position: relative;
+	&:not(:last-of-type) {
+		border-bottom: 1px solid darken($color-gray,10%);
+	}
+	.wrap {
+		padding: 70px 0;
+		position: relative;
+		margin: 0 auto;
+	}
+	.widget {
+		background-color: none;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.widget-title {
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	.widget-title,
+	h2 {
+		// color: inherit;
+		font-size: 40px;
+	}
+}
+
+.featuredpost {
+	clear: both;
+	.entry {
+		display: inline-block;
+		float: left;
+		margin: 0 0 1.5% 1.5%;
+		overflow: hidden;
+		padding: 0;
+		position: relative;
+		text-align: center;
+		width: 48.5%;
+		&:nth-of-type(2n+1) {
+			clear: both;
+			margin-left: 0;
+		}
+		a {
+			display: block;
+			img {
+				width: 100%;
+			}
+		}
+		.entry-title {
+			font-size: 30px;
+		}
+		.entry-image {
+			max-height: 300px;
+		}
+		.entry-header,
+		.entry-content {
+			padding: 0 40px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.hero.home-featured {
+		.wrap {
+			padding: 70px 30px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+
+	.home-hero {
+		.content {
+			min-height: auto;
+			width: 100%;
+			.widget-area {
+				display: table-cell;
+				text-align: center;
+				vertical-align: middle;
+				.widget-title {
+					font-size: 30px;
+				}
+			}
+		}
+		.hero-content {
+			padding: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.widget-title {
+		font-size: 25px !important;
+	}
+	.featuredpost {
+		.entry {
+			width: 100%;
+		}
+	}
+	.hero.home-featured {
+		.wrap {
+			padding: 50px 20px;
+		}
+	}
+}

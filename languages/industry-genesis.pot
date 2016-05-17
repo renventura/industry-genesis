@@ -1,0 +1,330 @@
+# Loco Gettext template
+msgid ""
+msgstr ""
+"Project-Id-Version: Industry Genesis Child Theme\n"
+"Report-Msgid-Bugs-To: Ren Ventura <mail@engagewp.com>\n"
+"POT-Creation-Date: 2016-03-17 12:50-0400\n"
+"PO-Revision-Date: 2016-03-17 12:50-0400\n"
+"Last-Translator: \n"
+"Language-Team: Ren Ventura <mail@engagewp.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Revision-Date: Wed Jan 20 2016 10:32:24 GMT-0500 (EST)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: functions.php:8 includes/admin/customizer-options.php:79
+msgid "Industry Child Theme"
+msgstr ""
+
+#: functions.php:51
+msgid "Primary Navigation Menu"
+msgstr ""
+
+#: includes/admin/css-editor.php:148
+msgid "CSS Editor"
+msgstr ""
+
+#: includes/admin/css-editor.php:159
+msgid "Close editor"
+msgstr ""
+
+#: includes/admin/css-editor.php:160
+msgid "Save changes"
+msgstr ""
+
+#: includes/admin/css-editor.php:173 includes/admin/css-editor.php:174
+msgid "Drag editor"
+msgstr ""
+
+#: includes/admin/customizer-options.php:30
+msgid "Main Hero Image"
+msgstr ""
+
+#: includes/admin/customizer-options.php:36
+msgid "Hero Header Color"
+msgstr ""
+
+#: includes/admin/customizer-options.php:42
+msgid "Hero Text Color"
+msgstr ""
+
+#: includes/admin/customizer-options.php:80
+msgid "Customizer settings for the Industry child theme."
+msgstr ""
+
+#: includes/admin/customizer-options.php:86 includes/admin/sidebars.php:20
+msgid "Front Page"
+msgstr ""
+
+#: includes/admin/customizer-options.php:87
+msgid "Front page images and colors."
+msgstr ""
+
+#: includes/admin/customizer-options.php:92
+msgid "Global Widgets"
+msgstr ""
+
+#: includes/admin/customizer-options.php:93
+msgid "Widgets displayed across the entire site."
+msgstr ""
+
+#: includes/admin/customizer-options.php:99
+msgid "Social Follow Background Color"
+msgstr ""
+
+#: includes/admin/customizer-options.php:106
+msgid "Miscellaneous"
+msgstr ""
+
+#: includes/admin/customizer-options.php:107
+msgid "Miscellaneous settings."
+msgstr ""
+
+#: includes/admin/customizer-options.php:113
+msgid "Favicon"
+msgstr ""
+
+#: includes/admin/customizer-options.php:118
+msgid "Logo Image"
+msgstr ""
+
+#: includes/admin/customizer-options.php:124
+msgid "Logo Max Width"
+msgstr ""
+
+#: includes/admin/customizer-options.php:125
+msgid "Default: 360px"
+msgstr ""
+
+#: includes/admin/customizer-options.php:130
+msgid "Logo Max Height"
+msgstr ""
+
+#: includes/admin/customizer-options.php:131
+msgid "Default: 80px"
+msgstr ""
+
+#: includes/admin/customizer-options.php:136
+msgid "Sticky Header"
+msgstr ""
+
+#: includes/admin/customizer-options.php:137
+msgid "Stick header to top of screen when scrolling up."
+msgstr ""
+
+#: includes/admin/customizer-options.php:142
+msgid "Scroll to Top"
+msgstr ""
+
+#: includes/admin/customizer-options.php:143
+msgid "Enable a scroll-to-top button."
+msgstr ""
+
+#: includes/admin/process-ajax.php:23
+msgid "Permissions failed."
+msgstr ""
+
+#: includes/admin/process-ajax.php:31
+msgid "Changes saved!"
+msgstr ""
+
+#: includes/admin/settings.php:36
+msgid "Industry Child Theme - General Settings"
+msgstr ""
+
+#: includes/admin/settings.php:37
+msgid "Industry Child Theme - Social Share Settings"
+msgstr ""
+
+#: includes/admin/settings.php:61 includes/admin/settings.php:65
+msgid "Frontend CSS Editor"
+msgstr ""
+
+#: includes/admin/settings.php:70
+msgid "Enable Editor"
+msgstr ""
+
+#: includes/admin/settings.php:78 includes/admin/settings.php:82
+msgid "Author Box"
+msgstr ""
+
+#: includes/admin/settings.php:87
+msgid "Enable on single posts"
+msgstr ""
+
+#: includes/admin/settings.php:95 includes/admin/settings.php:99
+msgid "Front Page Widgets"
+msgstr ""
+
+#: includes/admin/settings.php:105
+msgid "Number of front page widgets"
+msgstr ""
+
+#: includes/admin/settings.php:112 includes/admin/settings.php:116
+msgid "Custom Footer"
+msgstr ""
+
+#: includes/admin/settings.php:121
+msgid "Supports HTML and Shortcodes"
+msgstr ""
+
+#: includes/admin/settings.php:128 includes/admin/settings.php:132
+msgid "Customizer"
+msgstr ""
+
+#: includes/admin/settings.php:134
+msgid ""
+"For more customizations, open the WordPress Customizer and see the Industry "
+"Genesis panel."
+msgstr ""
+
+#: includes/admin/settings.php:134
+msgid "Open Customizer"
+msgstr ""
+
+#: includes/admin/settings.php:168 includes/admin/settings.php:172
+msgid "Enable Social Sharing Icons"
+msgstr ""
+
+#: includes/admin/settings.php:177
+msgid "Enable Share Buttons"
+msgstr ""
+
+#: includes/admin/settings.php:185 includes/admin/settings.php:189
+msgid "Button Types"
+msgstr ""
+
+#: includes/admin/settings.php:194
+msgid "Twitter"
+msgstr ""
+
+#: includes/admin/settings.php:201
+msgid "Facebook"
+msgstr ""
+
+#: includes/admin/settings.php:208
+msgid "Pinterest"
+msgstr ""
+
+#: includes/admin/settings.php:216 includes/admin/settings.php:220
+msgid "Post Types"
+msgstr ""
+
+#: includes/admin/settings.php:222
+msgid "Which post types should include share buttons?"
+msgstr ""
+
+#: includes/admin/settings.php:239 includes/admin/settings.php:243
+msgid "Via... (Twitter)"
+msgstr ""
+
+#: includes/admin/settings.php:251
+msgid "Who is responsible for the content?"
+msgstr ""
+
+#: includes/admin/settings.php:257 includes/admin/settings.php:261
+msgid "List of \"Related\" accounts (Twitter)"
+msgstr ""
+
+#: includes/admin/settings.php:269
+msgid ""
+"These accounts may be recommended by Twitter after a successful share. "
+"Separate each account by a comma. Do not include the @ symbol."
+msgstr ""
+
+#: includes/admin/sidebars.php:12
+msgid "Front Page Hero"
+msgstr ""
+
+#: includes/admin/sidebars.php:13
+msgid "This is the main/her section of the front page."
+msgstr ""
+
+#: includes/admin/sidebars.php:28
+msgid "Social Follow"
+msgstr ""
+
+#: includes/admin/sidebars.php:29
+msgid "Insert social follow links (displayed globally)"
+msgstr ""
+
+#: includes/comments.php:17
+#, php-format
+msgid "1 Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/comments.php:19
+msgid "What readers are saying..."
+msgstr ""
+
+#: includes/comments.php:23
+msgid "What readers are saying... (No Comments)"
+msgstr ""
+
+#: includes/enqueues.php:25
+msgid "Open Menu"
+msgstr ""
+
+#: includes/enqueues.php:26
+msgid "Close Menu"
+msgstr ""
+
+#: includes/enqueues.php:44
+msgid "No changes were made."
+msgstr ""
+
+#: includes/enqueues.php:45
+msgid "Saving..."
+msgstr ""
+
+#: includes/footer.php:36
+msgid "Return to top"
+msgstr ""
+
+#: includes/footer.php:42
+msgid "built for the "
+msgstr ""
+
+#: includes/footer.php:42
+msgid "Genesis Framework"
+msgstr ""
+
+#: includes/hero.php:70
+#, php-format
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/post-nav.php:25
+msgid "&lt; Previous"
+msgstr ""
+
+#: includes/post-nav.php:29
+msgid "Next &gt;"
+msgstr ""
+
+#: includes/share-buttons.php:43
+msgid "Share it"
+msgstr ""
+
+#: includes/share-buttons.php:48
+msgid "Tweet it"
+msgstr ""
+
+#: includes/share-buttons.php:53
+msgid "Pin it"
+msgstr ""

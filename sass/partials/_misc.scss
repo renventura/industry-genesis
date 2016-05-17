@@ -1,0 +1,172 @@
+/* CTAs
+--------------------------------------------- */
+
+.cta {
+	background: $color-cta;
+	color: #fff;
+	padding: 20px 0;
+	font-size: 30px;
+	overflow: hidden;
+	position: relative;
+	p {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	.button {
+		font-size: 20px;
+		float: right;
+	}
+	&:after {
+		content: " ";
+		display: block;
+		width: 0;
+		height: 0;
+		position: absolute;
+		left: calc( 50% - 70px );
+		bottom: -70px;
+		z-index: 999999;
+		border-left: 70px solid transparent;
+		border-right: 70px solid transparent;
+		border-top: 70px solid #4679BD;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.cta {
+		text-align: center;
+		p {
+			margin-bottom: 20px;
+		}
+		.button {
+			float: none;
+
+		}
+	}
+}
+
+/* Alert Boxes
+--------------------------------------------- */
+
+.alert {
+	border-style: dashed;
+	border-width: 1px;
+	padding: 20px;
+	margin-bottom: 20px;
+	&.alert-warning {
+		background-color: #FFFBCC;
+		border-color: darken(#FFFBCC,10%);
+	}
+	&.alert-success {
+		background-color: #C0FFA7;
+		border-color: darken(#C0FFA7,10%);
+	}
+	&.alert-error {
+		background-color: #FFBCBC;
+		border-color: darken(#FFBCBC,10%);
+	}
+	&.alert-info {
+		background-color: #d9edf7;
+		border-color: darken(#d9edf7,10%);
+	}
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* Pricing Tables
+--------------------------------------------- */
+
+.pricing-table {
+	ul {
+		background-color: #FFFFFF;
+		border: 5px solid $color-gray;
+		list-style: none;
+		margin-bottom: 20px;
+		text-align: center;
+		li {
+			background-color: #FFFFFF;
+			border-bottom-width: 2px;
+			border-width: 2px;
+			color: #333;
+			list-style-type: none;
+			padding: 5px 0;
+		}
+		li:nth-child(odd) {
+			background-color: $color-gray;
+		}
+		li:last-child {
+			padding: 10px 0;
+		}
+		li.heading {
+			background-color: #404661;
+			color: #FFFFFF;
+			font-size: 25px;
+			padding: 20px;
+		}
+		li.price {
+			color: #000000;
+			font-size: 25px;
+		}
+		li.action {
+			font-size: 22px;
+			color: #2A6496;
+		}
+	}
+	.featured {
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.pricing-table {
+		.featured {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+	}
+}
+
+/* Social buttons
+--------------------------------------------- */
+
+.social-buttons {
+	background-color: $color-gray;
+	padding: 30px;
+	text-align: center;
+	.social-button {
+		@include border-radius(300px);
+		color: #fff;
+		display: inline-block;
+		margin: 0 5px;
+		padding: 10px 30px;
+		&.facebook {
+			background-color: $facebook;
+			&:hover {
+				background-color: lighten($facebook,10%);
+			}
+		}
+		&.twitter {
+			background-color: $twitter;
+			&:hover {
+				background-color: lighten($twitter,10%);
+			}
+		}
+		&.pinterest {
+			background-color: $pinterest;
+			&:hover {
+				background-color: lighten($pinterest,10%);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.social-buttons {
+		.social-button {
+			display: block;
+			margin: 10px 0;
+			width: 100%;
+		}
+	}
+}

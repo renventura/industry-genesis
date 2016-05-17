@@ -1,0 +1,9 @@
+/languages/*		linguist-vendored
+/.tx				linguist-vendored
+/.*					export-ignore
+/gulpfile.json		export-ignore
+/package.json		export-ignore
+/node_modules/*		export-ignore
+/README.md			export-ignore
+/sass				export-ignore
+/build				export-ignore

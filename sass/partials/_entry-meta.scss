@@ -1,0 +1,32 @@
+/* Entry Meta
+--------------------------------------------- */
+
+.entry-header {
+
+}
+
+.entry-footer {
+	padding-top: 30px;
+}
+
+.entry-meta {
+	color: #999;
+	font-size: 13px;
+	margin-bottom: 0;
+	a {
+		border-bottom: 1px dotted #000;
+		color: #000;
+	}
+	.entry-categories,
+	.entry-tags {
+		display: block;
+		a {
+			&:hover {
+				
+			}	
+			&::before {
+				content: '#';
+			}	
+		}
+	}
+}

@@ -1,0 +1,51 @@
+/**
+ *	Transition
+ *	Usage: @include transition(all, 0.2s, ease-in-out);
+ */
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+@mixin border-radius($radius: 5px) {
+	border-radius: $radius;
+	background-clip: padding-box;
+}
+
+/**
+ *	Transition
+ *	Usage: @include dashed-border(3px); (no paramters for default 1px)
+ */
+@mixin dashed-border( $width: 1px ) {
+	border: $width dashed darken($color-gray,20%);
+}
+
+@mixin box-shadow( $horizontal: 1px, $vertical: 1px, $blur: 2px, $color: #CCC ) {
+	box-shadow: $horizontal $vertical $blur $color;
+}
+
+@mixin spin() {
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 300ms;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: spin;
+	-moz-animation-duration: 300ms;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-timing-function: linear;
+	-ms-animation-name: spin;
+	-ms-animation-duration: 300ms;
+	-ms-animation-iteration-count: 1;
+	-ms-animation-timing-function: linear;
+	@-webkit-keyframes spin {
+		from {
+			-webkit-transform:rotate(0deg);
+		}
+		to {
+			-webkit-transform:rotate(360deg);
+		}
+	}
+}
